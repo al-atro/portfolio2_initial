@@ -13,13 +13,13 @@ public class AdjacencyGraph {
     public void addEdge(Vertex from, Vertex to, Integer distance){
         if(!(Vertices.contains(from) && Vertices.contains(to)))
         {
-            System.out.println("Vertices missing from graph");
+            System.out.println("The line does not exist");
             return;
         }
         Edge newE=new Edge(from, to, distance);
         Edge newE2=new Edge( to, from, distance);
     }
-    // here we create a way for out graph to be displayed
+    // here we create a way for our graph to be displayed
     public void PrintGraph(){
         for(int i=0;i<Vertices.size();i++){
             System.out.println("City "+Vertices.get(i).name+" is connected to: ");
