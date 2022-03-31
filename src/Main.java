@@ -1,9 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
-       // here we display the graph
         AdjacencyGraph adjDirectedG = electricityGrid();
-        adjDirectedG.PrintGraph();
+       //uncomment to see the graph
+        // adjDirectedG.PrintGraph();
 
     }
 // here we add the cities and the paths to the graph
